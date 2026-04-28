@@ -1,28 +1,75 @@
-body{
-    background-color: white;
+body {
+    background-color: #f0f0f0;
     max-width: 100%;
     margin: 0 auto 0 auto;
+    font-family: sans-serif;
 }
 
-header{
-    padding: 20px;
-    background-color: black;
-    color: white;
-    text-align: left;
+body {
+    margin: 0;
+    font-family: sans-serif;
 }
 
-.header-container {
+.hero-container {
+    background-color: #572AAB;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    justify-content: center;
+    color: white;
 }
 
-.logo img {
-    width: 250px;
-    height: auto
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
+.hero-img img {
+    margin-right: 20px;
+    display: block;
+}
+
+.hero-content {
+    flex: 1;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img-logo {
+    align-self: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+p {
+    font-size: 20px;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 15px 40px;
+    background-color: #F2BC1B;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d1a317;
+    transform: scale(1.05);
+}
 
 .card-interes {
     background-color: #ffffff;
@@ -64,14 +111,20 @@ footer {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 
     body {
         background-color: #f8f8f8;
     }
 
-    header {
-        padding: 10px;
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-left: 0;
+        align-items: center;
     }
 
     footer {
@@ -83,13 +136,13 @@ footer {
     }
 
     .header-container {
-        flex-direction: column; 
-        gap: 10px;             
+        flex-direction: column;
+        gap: 10px;
         text-align: center;
     }
 
     .logo img {
-        width: 200px;           
+        width: 200px;
     }
 
     section {
