@@ -28,6 +28,7 @@
 
 body {
     background-image: url('img/fondo.jpg');
+    background-color: #000;
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
